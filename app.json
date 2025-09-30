@@ -1,12 +1,17 @@
-
 {
-
     "name": "Unkniwntxt",
-
     "description": "Download videos from various websites using this telegram bot",
-
     "repository": "https://github.com/devansh-op/txt-v2",
-    "buildpacks":[
+    "keywords": [
+        "telegram bot",
+        "pyrogram"
+    ],
+    "env": {
+        "BOT_TOKEN": "8257890733:AAGOyyrdtI3UbsE2FBeisCtSa7orbDZfwXg",
+        "API_ID": "24962099",
+        "API_HASH": "483dda200f05eebfa9dcb5edde5467b5"
+    },
+    "buildpacks": [
         {
             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
         },
@@ -15,30 +20,6 @@
         },
         {
             "url": "heroku/python"
-        }
-    ],
-    "keywords": [
-
-       
-
-        "telegram bot",
-
-        "pyrogram"
-
-    ],
-
-    {
-    "env": {
-        "BOT_TOKEN": "8257890733:AAGOyyrdtI3UbsE2FBeisCtSa7orbDZfwXg",
-        "API_ID": "24962099",
-        "API_HASH": "483dda200f05eebfa9dcb5edde5467b5"
-    },
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
         }
     ]
 }
